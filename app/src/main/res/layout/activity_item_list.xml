@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="hu.esamu.rft.esamurft.ItemListActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include layout="@layout/item_list" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/relativeLayout"
+        android:layout_centerHorizontal="true">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:srcCompat="@android:drawable/ic_menu_edit"
+            android:id="@+id/buttonCraft"
+            android:onClick="toCraft"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_mapmode"
+            android:id="@+id/buttonMap"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/buttonCraft"
+            android:onClick="toMap"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            app:srcCompat="@android:drawable/ic_menu_gallery"
+            android:id="@+id/buttonBase"
+            android:layout_toRightOf="@+id/buttonMap"
+            android:layout_alignParentBottom="true"
+            android:onClick="toBase"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_camera"
+            android:id="@+id/buttonCamera"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/buttonBase"
+            android:onClick="toCamera"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/star_big_on"
+            android:id="@+id/buttonQuest"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/buttonCamera"
+            android:onClick="toQuest"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

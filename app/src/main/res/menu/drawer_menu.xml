@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_baseview"
+            android:title="Base" />
+        <item
+            android:id="@+id/action_map"
+            android:title="Map" />
+        <item
+            android:id="@+id/action_camera"
+            android:title="Camera" />
+        <item
+            android:id="@+id/action_quests"
+            android:title="Quests" />
+        <item
+            android:id="@+id/action_recipes"
+            android:title="Recipes" />
+    </group>
+
+</menu>
